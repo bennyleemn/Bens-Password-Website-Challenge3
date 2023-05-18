@@ -13,33 +13,6 @@
 // // Add event listener to generate button
 // generateBtn.addEventListener("click", writePassword);
 
-// *****************************************************
-
-// Goals: 
-// Use above starter code to (uncomment to use it):
-    // UI Confirm whether to include uppercase, lowercase, symbols or numbers.
-        // Declare what are acceptable variables (alpha, num, sym)
-    // Validate for all inputs
-    // Generate Password
-    // Check it meets criteria
-    // Display generated value to textbox
-    // Write password to the #password Input
-
-    // **WhileTrueDO (uncomment to see code)**
-    // this.Condition = true
-    // while(true) {
-    //     do
-    //     if (conditionmet){
-    //     this.condition = false
-    //     }
-    // }
-
-    // small b in front of variables (vars) = boolean
-// *****************************************************
-function_aPasswordGenerator = function(variable) {
-    console.log("Enter something")
-    return
-}
     // Object Name
     aPasswordGenerator = {
 
