@@ -1,4 +1,4 @@
-// var generateBtn = document.querySelector("#generate");
+// var generateBtn = document.querySelector("#generate"); <--**commented out because i didn't like the chrome debugger error**
 
 // Object Name
 aPasswordGenerator = {
@@ -23,7 +23,8 @@ aPasswordGenerator = {
     password: "",
     length: [""],
 
-    // Function to prompt user responses for possible input variables such as length, upper, lower, symbol and num chars, validate at least 1 is selected, validate length is within param set,
+    // Function to prompt user responses for possible input variables such as length, upper, lower, symbol and num chars where it is initialized to false.
+    // validate at least 1 is selected, validate length is within param set,
     // alerts user if any length or 1 char selection min is not met,
     writePassword: function () {
         bHasUpper = false
@@ -47,7 +48,7 @@ aPasswordGenerator = {
             this.bSymbols = confirm("Do you want symbols?")
 
             if (this.bUpperCase) {
-                // var randomVariable = this.possibleCharacters.concat(this.upperLetters);
+                // var randomVariable = this.possibleCharacters.concat(this.upperLetters); <-- **commented out because i didn't like the chrome debugger error**
                 this.possibleCharacters = this.possibleCharacters.concat(this.upperLetters);
             }
             if (this.bLowerCase) {
@@ -68,7 +69,8 @@ aPasswordGenerator = {
 
         while (!this.charactersArePossible) {
             // Loop through and generate a password with the specified length using a random index, validate for length and selected char properties (whatever user hit 'ok'  
-            // and 'cancel'for on UI). If the password index value is missing a selected char from randomized set 
+            // and 'cancel'for on UI). If the password index value is missing a selected char from randomized set the loop runs until the all true ifs are satisfied 
+            // and the final condition of 'True' is met where the desired character selection(s) are true.
             for (var i = 0; i < this.passwordLength; i++) {
                 var randomIndex = Math.floor(Math.random() * this.possibleCharacters.length);
                 this.password += this.possibleCharacters[randomIndex];
@@ -94,13 +96,13 @@ aPasswordGenerator = {
             }
 
         }
-        // log randomized, generated password to Console and set to password textarea in html
+        // log randomized, generated password to Console and set to password textarea in html - added a "hotfix" within textarea alerting user to refresh page to run again
         console.log("Generated Password", this.password);
-        document.getElementById("password").value = this.password;
+        document.getElementById("password").value = this.password + "    ¯\_(ツ)_/¯    Refresh Page to Begin Anew!";
         
     }
 }
 window;
 // add click event - link it to a button.
-// generateBtn.addEventListener("click", aPasswordGenerator.writePassword);
+// generateBtn.addEventListener("click", aPasswordGenerator.writePassword); <-- **commented out because i didn't like the chrome debugger error**
 // adding the bits of code for the generate button caused UI artifacts (questions asked multiple times) and errors and did not reset the page as intended.
