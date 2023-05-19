@@ -12,7 +12,7 @@ Complete Backend JS coding so that user can procure a computer generated passwor
 
 Link to deployed site: [()]
 
-Link to repo: []
+Link to repo: [https://github.com/bennyleemn/Bens-Password-Website-Challenge3]
 
 
 
