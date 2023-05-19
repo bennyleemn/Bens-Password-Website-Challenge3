@@ -10,7 +10,7 @@ Complete Backend JS coding so that user can procure a computer generated passwor
  Display generated value to textbox
  Write password to the #password Input
 
-Link to deployed site: [()]
+Link to deployed site: [(https://bennyleemn.github.io/Bens-Password-Website-Challenge3/)]
 
 Link to repo: [https://github.com/bennyleemn/Bens-Password-Website-Challenge3]
 
